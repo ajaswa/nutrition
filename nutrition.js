@@ -8,7 +8,7 @@ NT.init = function() {
         event.preventDefault();
         $.get( NT.getUri + $("#upc").val() )
             .done(function(data) {
-                postResults(data);
+                NT.postResults(data);
             });
     });
 
