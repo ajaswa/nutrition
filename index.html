@@ -1,0 +1,52 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Nutrition</title>
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+  <script src="http://anthonyterrien.com/demo/knob/jquery.knob.min.js"></script>
+
+</head>
+
+<body>
+
+    <h1>Enter a UPC</h1>
+
+    <div>
+        <form id="searchForm" >
+            <input name="upc"/>
+            <input type="submit" id="search" name="search" value="Food Me"/>
+        </form>
+    </div>
+    <div> try: 49000036756 </div>
+
+    <div id="productName"></div>
+
+    <div>
+        <div class="details">
+        Calories<br/>
+        <input type="text" id="calories" name="calories" class="dial" data-min="0" data-max="500" data-fgColor="#66CC66" data-angleOffset="-125" data-angleArc="250" data-readOnly="true" data-width="100">
+        </div>
+
+        <div class="details">
+            Fat
+            <input type="text" id="fat" name="fat" class="dial" data-min="0" data-max="500" data-fgColor="#66CC66" data-angleOffset="-125" data-angleArc="250" data-readOnly="true" data-width="100">
+        </div>
+
+        <div class="details">
+            Sodium
+            <input type="text" id="sodium" name="sodium" class="dial" data-min="0" data-max="500" data-fgColor="#66CC66" data-angleOffset="-125" data-angleArc="250" data-readOnly="true" data-width="100">
+        </div>
+
+        <div class="details">
+            Sugars
+            <input type="text" id="sugars" name="sugars" class="dial" data-min="0" data-max="500" data-fgColor="#66CC66" data-angleOffset="-125" data-angleArc="250" data-readOnly="true" data-width="100">
+        </div>
+    </div>
+    <script src="nutrition.js"></script>
+</body>
+</html>
