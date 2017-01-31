@@ -6,14 +6,27 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
 
-*{
+html, body, input {
   font-family: 'Varela Round';
   font-size: 110%;
   color: #66CC66;
   background-color: white;
 }
 
-input[name="upc"]{
+body {
+    width: 80%;
+    padding: 0;
+    margin: 0 auto;
+}
+section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+small {
+    display: block;
+}
+input['type=text'] {
   background-color: transparent;
   border: solid;
   border-width: 0 0 5px 0;
@@ -29,3 +42,4 @@ input[name="upc"]{
 .details input {
     margin-top: 20px;
 }
+

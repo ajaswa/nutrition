@@ -14,39 +14,40 @@
 
 <body>
 
-    <h1>Enter a UPC</h1>
-
-    <div>
-        <form id="searchForm" >
-            <input id="upc" name="upc"/>
+    <section>
+        <h1>Enter a UPC</h1>
+    </section>
+    <section>
+        <form id="searchForm">
+            <input id="upc" name="upc" type="text" />
             <input type="submit" id="search" name="search" value="Food Me"/>
+            <small>try: 49000036756</small>
         </form>
-    </div>
-    <div> try: 49000036756 </div>
+    </section>
 
-    <div id="productName"></div>
+    <section><h2 id="productName"></h2></section>
 
-    <div>
+    <section id="productDetails">
         <div class="details">
-        Calories<br/>
+            <h3>Calories</h3>
         <input type="text" id="calories" name="calories" class="dial" data-min="0" data-max="500" data-fgColor="#66CC66" data-angleOffset="-125" data-angleArc="250" data-readOnly="true" data-width="100">
         </div>
 
         <div class="details">
-            Fat
+            <h3>Fat</h3>
             <input type="text" id="fat" name="fat" class="dial" data-min="0" data-max="500" data-fgColor="#66CC66" data-angleOffset="-125" data-angleArc="250" data-readOnly="true" data-width="100">
         </div>
 
         <div class="details">
-            Sodium
+            <h3>Sodium</h3>
             <input type="text" id="sodium" name="sodium" class="dial" data-min="0" data-max="500" data-fgColor="#66CC66" data-angleOffset="-125" data-angleArc="250" data-readOnly="true" data-width="100">
         </div>
 
         <div class="details">
-            Sugars
+            <h3>Sugars</h3>
             <input type="text" id="sugars" name="sugars" class="dial" data-min="0" data-max="500" data-fgColor="#66CC66" data-angleOffset="-125" data-angleArc="250" data-readOnly="true" data-width="100">
         </div>
-    </div>
+    </seciton>
     <script src="nutrition.js"></script>
 </body>
 </html>
