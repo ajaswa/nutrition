@@ -16,9 +16,8 @@ NT.init = function() {
     $('.dial').val(0).trigger('change');
 };
 
-NT.postResults = function(response) {
-    var foodItem = JSON.parse(response);
-    $("#results").html(response);
+NT.postResults = function(foodItem) {
+    $("#results").html(foodItem);
     $("#calories").val(foodItem.nf_calories).trigger('change');
     $("#fat").val(foodItem.nf_total_fat).trigger('change');
     $("#sodium").val(foodItem.nf_sodium).trigger('change');
