@@ -9,11 +9,18 @@ NT.init = function() {
         $.get( NT.getUri + $("#upc").val() )
             .done(function(data) {
                 NT.postResults(data);
+            })
+            .fail(function(){
+                $("#productName").html("Please try another product");
             });
+    });
+    $("#searchForm small span").on("click", function(e){
+        $("#upc").val(e.target.innerHTML);
+        $("#searchForm").submit();
     });
 
     $(".dial").knob();
-    $('.dial').val(0).trigger('change');
+    $(".dial").val(0).trigger("change");
 };
 
 NT.postResults = function(foodItem) {

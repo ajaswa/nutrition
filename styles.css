@@ -26,6 +26,10 @@ section {
 small {
     display: block;
 }
+small span {
+    cursor: pointer;
+    text-decoration: underline;
+}
 input['type=text'] {
   background-color: transparent;
   border: solid;
