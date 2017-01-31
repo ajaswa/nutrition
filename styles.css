@@ -47,3 +47,61 @@ input['type=text'] {
     margin-top: 20px;
 }
 
+#interactive.viewport {
+    position: relative;
+}
+
+canvas.drawing, canvas.drawingBuffer {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+
+
+
+#result_strip {
+  margin: 10px 0;
+  border-top: 1px solid #EEE;
+  border-bottom: 1px solid #EEE;
+  padding: 10px 0;
+}
+#result_strip ul.thumbnails {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  width: auto;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+#result_strip ul.thumbnails > li {
+  display: inline-block;
+  vertical-align: middle;
+  width: 160px;
+}
+#result_strip ul.thumbnails > li .thumbnail {
+  padding: 5px;
+  margin: 4px;
+  border: 1px dashed #CCC;
+}
+#result_strip ul.thumbnails > li .thumbnail img {
+  max-width: 140px;
+}
+#result_strip ul.thumbnails > li .thumbnail .caption {
+  white-space: normal;
+}
+#result_strip ul.thumbnails > li .thumbnail .caption h4 {
+  text-align: center;
+  word-wrap: break-word;
+  height: 40px;
+  margin: 0px;
+}
+#result_strip ul.thumbnails:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+

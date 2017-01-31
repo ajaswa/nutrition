@@ -8,7 +8,9 @@
 
   <link rel="stylesheet" href="styles.css">
   <script src="jquery.min.js"></script>
+  <!-- <script src="//code.jquery.com/jquery-1.11.0.min.js"></script> -->
   <script src="jquery.knob.min.js"></script>
+  <script src="quagga.min.js"></script>
 </head>
 
 <body>
@@ -47,6 +49,21 @@
             <input type="text" id="sugars" name="sugars" class="dial" data-min="0" data-max="500" data-fgColor="#66CC66" data-angleOffset="-125" data-angleArc="250" data-readOnly="true" data-width="100">
         </div>
     </seciton>
+
+
+    <section>
+                <label>
+                    <span>Camera</span>
+                    <select name="input-stream_constraints" id="deviceSelection">
+                    </select>
+                </label>
+    </seciton>
+    <section>
+        <div id="interactive" class="viewport"><video autoplay="true" preload="auto" src=""></video><canvas class="drawingBuffer" width="640" height="480"></canvas><br clear="all"></div>
+    </section>
+    <section id="result_strip">
+        <ul class="thumbnails"></ul>
+    </section>
     <script src="nutrition.js"></script>
     <script id="gitforker" src="https://cdn.rawgit.com/ajaswa/gitforker/master/gitforker.min.js" data-url="https://github.com/ajaswa/nutrition"></script>
 </body>
