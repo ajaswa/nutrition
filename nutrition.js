@@ -1,7 +1,7 @@
 var NT = NT || {};
 NT.appKEY = "a612c3af4c291fb441f665ff21023933";
 NT.appID = "fdac48c4";
-NT.getURL = "https://api.nutritionix.com/v1_1/item?appId=" + NT.appId + "&appKey=" + NT.appKey + "&upc=";
+NT.getUri = "https://api.nutritionix.com/v1_1/item?appId=" + NT.appId + "&appKey=" + NT.appKey + "&upc=";
 NT.init = function() {
 
     $('#searchForm').submit(function( event ) {
